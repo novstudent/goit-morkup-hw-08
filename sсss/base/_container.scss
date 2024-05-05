@@ -1,0 +1,18 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: var(--main-font);
+  background-color: var(--white-col);
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  // outline: 1px solid red;
+}

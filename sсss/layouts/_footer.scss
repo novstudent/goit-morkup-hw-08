@@ -1,0 +1,109 @@
+.footer-main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #2f303a;
+}
+.futer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+}
+.footer-adres {
+  margin-bottom: 9px;
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--white-col);
+  margin: 20px 0px 0px 0px;
+}
+.addres-mail,
+.addres-tel {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer:hover,
+.footer:focus {
+  color: var(--white-col);
+  outline: none;
+}
+.footer {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.footer-social {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-col);
+  margin-bottom: 20px;
+}
+.socials-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/*-- form futer--*/
+
+.form-footer-email {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: rgba(33, 150, 243, 0);
+  padding: 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  outline: transparent;
+}
+.footer-btn-form {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  color: var(--white-col);
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn-form:hover,
+.footer-btn-form:focus {
+  background-color: #188ce8;
+  outline: transparent;
+}
+.form-fild {
+  display: flex;
+}
+
+.sing-up {
+  margin-left: 28px;
+  margin-right: 10px;
+}

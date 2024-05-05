@@ -1,0 +1,42 @@
+// ----
+// наша команда__секція 5
+.team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-team {
+  display: flex;
+}
+.img-team {
+  margin-right: 30px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  background: var(--white-col);
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.section-headline {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+.work {
+  font-size: 16px;
+  color: var(--gray-col);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.name-work {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

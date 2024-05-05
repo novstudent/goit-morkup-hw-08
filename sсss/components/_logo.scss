@@ -1,0 +1,28 @@
+// логотип__header
+.header__logo {
+  margin-right: 90px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+
+  color: var(--accent-color);
+  text-decoration: none;
+  outline: none;
+}
+.header__logo-color {
+  color: #000;
+}
+
+// логотип__footer
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-color);
+
+  text-decoration: none;
+  outline: none;
+}
+.footer-studio {
+  color: var(--white-col);
+}

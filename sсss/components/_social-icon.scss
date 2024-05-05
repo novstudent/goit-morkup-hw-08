@@ -1,0 +1,46 @@
+/*=== іконки ===================*/
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-col);
+
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.social-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-link:hover .social-icon,
+.socials-link:focus .social-icon {
+  fill: var(--white-col);
+}
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+// колір і маржини для іконок footer
+.footikon {
+  fill: var(--white-col);
+}
+
+.footer-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
