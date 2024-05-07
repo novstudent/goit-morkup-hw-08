@@ -1,14 +1,44 @@
 // постійні клієнти__секція 6
 
-.our-clients {
-  padding-top: 88px;
-  padding-bottom: 94px;
-}
+// .our-clients {
+//   // padding-top: 88px;
+//   // padding-bottom: 94px;
+// }
+
 .client {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
+.client-item {
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+
+    .client-link {
+      width: 210px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+
+    .client-link {
+      width: 226px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 12 * 15px) / 6);
+    margin: 15px;
+
+    .client-link {
+      width: 170px;
+    }
+  }
+}
+
 .client-link {
   display: flex;
   align-items: center;
@@ -35,8 +65,4 @@
 .client-icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-item:not(:last-child) {
-  margin-right: 30px;
 }

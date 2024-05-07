@@ -2,21 +2,50 @@
 // наша команда__секція 5
 .team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .our-team {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 .img-team {
-  margin-right: 30px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   background: var(--white-col);
 
-  &:last-child {
-    margin-right: 0px;
+  @media screen and (min-width: 480px) {
+    .our-foto {
+      width: 450px;
+    }
   }
+
+  @media screen and (min-width: 768px) {
+    // width: 50%;
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    .our-foto {
+      width: 354px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    // width: 25%;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    .our-foto {
+      width: 270px;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  // &:last-child {
+  //   margin-right: 0px;
+  // }
 }
 .section-headline {
   font-weight: 700;
