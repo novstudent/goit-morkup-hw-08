@@ -77,7 +77,7 @@ ul {
   color: #000;
 }
 
-.footer-logo {
+.footer__logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -86,7 +86,7 @@ ul {
   outline: none;
 }
 
-.footer-studio {
+.footer__studio {
   color: var(--white-col);
 }
 
@@ -415,11 +415,6 @@ ul {
   fill: var(--white-col);
 }
 
-.footer-icon {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .header {
   border-color: 1px solid #ececec;
 }
@@ -648,10 +643,11 @@ ul {
   margin: 0px;
 }
 
-.works {
-  padding-bottom: 94px;
+@media screen and (max-width: 1200px) {
+  .works {
+    display: none;
+  }
 }
-
 .ourwork {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -841,39 +837,113 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer__main {
   background: #2f303a;
 }
 
-.futer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .fut__mail {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .footer__address,
+  .footer-icon {
+    margin-bottom: 60px;
+  }
+  .form-footer-email {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  .form-fild {
+    display: block;
+  }
+  .footer-btn-form {
+    margin: auto;
+  }
 }
-
-.footer-mail {
-  margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .buter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__item,
+  .footer-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-fild {
+    display: block;
+  }
+  .footer-btn-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
 }
-
-.footer-adres {
-  margin-bottom: 9px;
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: left;
+  }
+  .buter {
+    outline: 1px solid fuchsia;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__address {
+    margin: 0px;
+  }
+  .form-futer-box {
+    display: block;
+    margin-left: auto;
+  }
+  .footer-icon {
+    display: block;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .form-fild {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0px;
+  }
+  .form-footer-email {
+    width: 358px;
+    margin-right: 12px;
+  }
+  .footer-btn-form {
+    margin: 0px;
+  }
 }
-
-.address {
+.fut__adres {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71429;
   color: var(--white-col);
-  margin: 20px 0px 0px 0px;
 }
 
-.addres-mail,
-.addres-tel {
+.futer {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
@@ -881,19 +951,13 @@ ul {
   color: rgba(255, 255, 255, 0.6);
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: none;
 }
 
-.footer:hover,
-.footer:focus {
+.futer:hover,
+.futer:focus {
   color: var(--white-col);
   outline: none;
-}
-
-.footer {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  text-decoration: none;
 }
 
 .footer-social {
@@ -913,7 +977,6 @@ ul {
 .form-footer-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
   height: 50px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -937,7 +1000,6 @@ ul {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
@@ -955,12 +1017,6 @@ ul {
 .footer-btn-form:focus {
   background-color: #188ce8;
   outline: transparent;
-}
-
-.form-fild {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .sing-up {

@@ -1,6 +1,14 @@
-.works {
-  padding-bottom: 94px;
+// секція 4  чим ми займаїмось
+// .works {
+//   padding-bottom: 94px;
+// }
+
+@media screen and (max-width: 1200px) {
+  .works {
+    display: none;
+  }
 }
+
 .ourwork {
   display: flex;
   list-style: none;

@@ -1,49 +1,121 @@
-.footer-main {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer__main {
   background: #2f303a;
 }
-.futer-container {
-  display: flex;
-  align-items: baseline;
+
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .fut__mail {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .footer__address,
+  .footer-icon {
+    margin-bottom: 60px;
+  }
+  .form-footer-email {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+  .form-fild {
+    display: block;
+  }
+  .footer-btn-form {
+    margin: auto;
+  }
 }
 
-.footer-mail {
-  margin-bottom: 9px;
-}
-.footer-adres {
-  margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .buter {
+    display: flex;
+  }
+  .footer__item,
+  .footer-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-fild {
+    display: block;
+  }
+  .footer-btn-form {
+    display: flex;
+    margin: auto;
+  }
 }
 
-.address {
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+
+    text-align: left;
+  }
+  .buter {
+    outline: 1px solid fuchsia;
+    display: flex;
+    // margin-right: 94px;
+  }
+  .footer__address {
+    margin: 0px;
+  }
+  .form-futer-box {
+    display: block;
+    margin-left: auto;
+    // margin-right: auto;
+  }
+
+  .footer-icon {
+    display: block;
+    margin-left: 70px;
+    // margin-right: auto;
+    // margin-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .form-fild {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+  }
+  .form-footer-email {
+    width: 358px;
+    margin-right: 12px;
+  }
+
+  .footer-btn-form {
+    margin: 0px;
+  }
+}
+
+.fut__adres {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71429;
   color: var(--white-col);
-  margin: 20px 0px 0px 0px;
 }
-.addres-mail,
-.addres-tel {
+.futer {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71429;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer:hover,
-.footer:focus {
-  color: var(--white-col);
-  outline: none;
-}
-.footer {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
   text-decoration: none;
 }
 
+.futer:hover,
+.futer:focus {
+  color: var(--white-col);
+  outline: none;
+}
+
+// іконки__текст і колір
 .footer-social {
   font-weight: 700;
   font-size: 14px;
@@ -61,7 +133,7 @@
 .form-footer-email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  width: 358px;
+  // width: 350px;
   height: 50px;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -82,7 +154,7 @@
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--accent-color);
   color: var(--white-col);
@@ -98,9 +170,6 @@
 .footer-btn-form:focus {
   background-color: #188ce8;
   outline: transparent;
-}
-.form-fild {
-  display: flex;
 }
 
 .sing-up {
