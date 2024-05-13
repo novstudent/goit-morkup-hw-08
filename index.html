@@ -24,29 +24,87 @@
 
   <body>
     <!-- секція1 heder -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container heder__container">
-        <nav class="header__main-nav"> -->
-    <!-- логотип -->
-    <!-- <a class="header__logo" href="/"
+        <nav class="header__main-nav">
+          <!-- логотип -->
+          <a class="header__logo" href="/"
             >Web<span class="header__logo-color">Studio</span></a
-          > -->
-    <!-- навігація -->
-    <!-- <ul class="header__nav">
+          >
+
+          <!-- випадаюче меню -->
+          <button
+            type="button "
+            class="header__button is-open"
+            aria-expanded="false"
+            aria-controls="menu-conteiner"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="кнопка меню">
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-menu_40px"
+              ></use>
+            </svg>
+          </button>
+
+          <!--  -->
+          <div class="menu__conteiner" id="menu-conteiner" data-menu>
+            <div>
+              <ul class="menu__list">
+                <li class="menu__title">
+                  <a class="menu__link menu__focus current" href="">Студія</a>
+                </li>
+                <li class="menu__title">
+                  <a class="menu__link menu__focus" href="">Портфоліо</a>
+                </li>
+                <li class="menu__title">
+                  <a class="menu__link menu__focus" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__conteiner-contakt">
+              <ul>
+                <li class="">
+                  <a class="menu__tel menu__focus" href="">+38 096 111 11 11</a>
+                </li>
+                <li class="menu__contakt">
+                  <a class="menu__mail menu__focus" href=""
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="menu__conteiner-social">
+                <li class="menu-social">Instagram</li>
+                <li class="menu-social">Twitter</li>
+                <li class="menu-social">Facebook</li>
+                <li class="menu-social">LinkedIn</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- навігація -->
+          <ul class="header__nav">
             <li class="header__item-nav">
               <a href="" class="header__link current">Студія</a>
             </li>
             <li class="header__item-nav">
               <a href="./portfolio.html" class="header__link">Портфоліо</a>
             </li>
-            <li class="header__item-nav header__item">
+            <li class="header__item-nav">
               <a href="" class="header__link">Контакти</a>
             </li>
           </ul>
-        </nav> -->
-    <!--    контакти     -->
-    <!-- <ul class="header__kontact-nav">
-          <li class="header__item-nav">
+        </nav>
+
+        <!--    контакти     -->
+        <ul class="header__kontact-nav">
+          <li class="">
             <a
               class="header__link header__kontact"
               href="mailto:info@devstudio.com"
@@ -57,8 +115,7 @@
               info@devstudio.com</a
             >
           </li>
-
-          <li class="header__item-nav header__item">
+          <li class="header__item">
             <a class="header__link header__kontact" href="tel:+380961111111">
               <svg class="header__icon" width="10">
                 <use href="./images/sprite.svg#icon-Vector"></use>
@@ -68,19 +125,19 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- секція герой-->
-      <!-- <section class="hero hero__section hero__img">
+      <section class="hero hero__section hero__img">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__main-btn" type="button" data-modal-open>
             Замовити послугу
-          </button> -->
+          </button>
 
-      <!-- модальне вікно -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+          <!-- модальне вікно -->
+          <div class="backdrop is-hidden" data-modal>
             <div class="modal-wrapper">
               <button class="modal-btn" data-modal-close>
                 <svg class="modal-btn-icon" width="30" height="30">
@@ -166,7 +223,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- секція 3 features особливості -->
       <section class="features">
@@ -236,7 +293,7 @@
               <div class="">
                 <img
                   class="img-tin"
-                  src="images/img.jpg"
+                  src="images/img1.jpg"
                   alt="компютери"
                   width="370"
                 />
@@ -245,7 +302,7 @@
             </li>
 
             <li class="img">
-              <img src="images/box2.jpg" alt="телефони" width="370" />
+              <img src="images/img2.jpg" alt="телефони" width="370" />
               <p class="img-text">Мобільні додатки</p>
             </li>
             <li class="img">
@@ -573,5 +630,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -13,6 +13,8 @@
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -22,7 +24,12 @@
 .backdrop.is-hidden .modal-wrapper {
   transform: translate(-50%, -50%) scale(0, 6);
 }
+
 .modal-wrapper {
+  @media screen and (max-width: 1200px) {
+    width: 450px;
+    height: 609px;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,6 +155,9 @@
   margin-top: 20px;
 }
 .polise-private {
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.03em;

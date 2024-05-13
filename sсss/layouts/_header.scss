@@ -1,62 +1,253 @@
 // header__секція 1
 
-.header {
-  border-color: 1px solid #ececec;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header .container {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .header__main-nav {
+    outline: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__button {
+    display: inline-flex;
+
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header__button .icon-menu {
+    display: none;
+  }
+  .header__button.is-open .icon-menu {
+    display: block;
+  }
+  .header__button.is-open .icon-close {
+    display: none;
+  }
+  .menu__conteiner {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-width: 480px;
+    // height:;
+
+    padding: 48px 84px 48px 40px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08),
+      0 4px 8px 0 rgba(0, 0, 0, 0.04);
+    background: #fff;
+
+    &.is-open {
+      display: block;
+    }
+  }
+  .header__nav,
+  .header__kontact-nav {
+    display: none;
+  }
+  .menu__link {
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+  }
+
+  .menu__conteiner-contakt {
+    margin-top: 300px;
+  }
+
+  .menu__title {
+    margin-bottom: 35px;
+  }
+  .menu__title:last-child {
+    margin-bottom: 0px;
+  }
+  .menu__contakt {
+    margin-top: 32px;
+  }
+  .menu__tel {
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+    margin: 0px;
+  }
+  .menu__mail {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+    margin: 0px;
+  }
+  .menu__conteiner-social {
+    display: flex;
+    margin-top: 64px;
+  }
+  .menu-social {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    margin-right: 20px;
+  }
+  .menu-social:last-child {
+    margin-right: 0px;
+  }
+
+  .menu__focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu__focus:hover,
+  .menu__focus:focus {
+    color: #2196f3;
+  }
+  .menu__focus.current {
+    color: #2196f3;
+  }
 }
 
-.heder__container {
-  display: flex;
-  align-items: center;
-}
-.header__main-nav {
-  display: flex;
-  align-items: center;
+// ------------------------------------
+@media screen and (min-width: 768px) {
+  .header__button,
+  .menu__conteiner {
+    display: none;
+  }
+  .header .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    margin-right: 97px;
+  }
+  .header__main-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: 96px;
+  }
+  .header__link {
+    display: flex;
+    position: relative;
+
+    text-decoration: none;
+    outline: transparent;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin: 0px;
+
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__kontact {
+    padding: 0px;
+    margin: 0px;
+  }
+  .header__item {
+    margin-top: 10px;
+  }
+  .header__item-nav {
+    margin-right: 50px;
+    padding: 0px;
+  }
+  .header__item-nav:last-child {
+    margin-right: 0px;
+  }
+  .header__icon {
+    display: block;
+    width: 10px;
+    height: 16px;
+    margin-right: 8px;
+
+    padding: 0px;
+    fill: currentColor;
+  }
 }
 
-/* навігація */
-.header__nav {
-  display: flex;
-  align-items: center;
-}
-.header__item-nav {
-  margin-right: 50px;
-}
-.header__item:last-child {
-  margin-right: 0px;
-}
-/* контакти */
-.header__kontact-nav {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
+@media screen and (min-width: 1200px) {
+  .header {
+    border-color: 1px solid #ececec;
+  }
+  .heder__container {
+    display: flex;
+    align-items: center;
+  }
+  .header__main-nav {
+    display: flex;
+    align-items: center;
+  }
+  /* навігація */
+  .header__nav {
+    display: flex;
+    align-items: center;
+  }
+  .header__item-nav {
+    margin-right: 50px;
+  }
+  .header__item:last-child {
+    margin-right: 0px;
+  }
 
-.header__kontact {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--gray-col);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__icon {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header__link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: var(--primary-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* контакти */
+  .header__kontact-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  .header__item {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+  .header__kontact {
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--gray-col);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .header__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  position: relative;
-  text-decoration: none;
-  outline: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .header__link::after {
@@ -80,4 +271,9 @@
 }
 .header__link.current {
   color: var(--accent-color);
+}
+
+.header__button:focus {
+  fill: #2196f3;
+  outline: transparent;
 }
