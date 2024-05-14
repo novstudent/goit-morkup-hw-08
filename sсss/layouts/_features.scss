@@ -6,8 +6,6 @@
   }
 }
 .features__post {
-  outline: 1px solid firebrick;
-
   @media screen and (min-width: 768px) {
     // width: 50%;
     width: calc((100% - 4 * 15px) / 2);

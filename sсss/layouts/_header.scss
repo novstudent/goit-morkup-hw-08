@@ -7,19 +7,17 @@
     padding-bottom: 16px;
   }
   .header__main-nav {
-    outline: 1px solid green;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .header__button {
     display: inline-flex;
-
     margin: 0px;
     padding: 0px;
     border: none;
     background-color: transparent;
-    // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header__button .icon-menu {
@@ -38,7 +36,7 @@
     left: 0;
     width: 100%;
     max-width: 480px;
-    // height:;
+    height: 796px;
 
     padding: 48px 84px 48px 40px;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 4px 0 rgba(0, 0, 0, 0.08),
