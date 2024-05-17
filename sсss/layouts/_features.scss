@@ -1,8 +1,32 @@
 .features__list {
+  @media screen and (min-width: 480px) {
+    .features__icon {
+      width: 450px;
+      height: 120px;
+    }
+  }
+}
+
+.features__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+    .features__icon {
+      width: 354px;
+      height: 120px;
+    }
+  }
+}
+
+.features .container {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 1px;
+    .features__icon {
+      width: 270px;
+      height: 120px;
+    }
   }
 }
 .features__post {
@@ -25,11 +49,16 @@
 }
 
 .features__title {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
+  color: #212121;
 }
 .features__text {
   font-size: 14px;
@@ -42,6 +71,7 @@
   justify-content: center;
   align-items: center;
   background: #f5f4fa;
+
   border-radius: 4px;
   margin-bottom: 30px;
 }

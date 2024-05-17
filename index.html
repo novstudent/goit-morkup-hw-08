@@ -31,63 +31,15 @@
           <a class="header__logo" href="/"
             >Web<span class="header__logo-color">Studio</span></a
           >
-
-          <!-- випадаюче меню -->
-
-          <button
-            type="button "
-            class="header__button is-open"
-            aria-expanded="false"
-            aria-controls="menu-conteiner"
-            data-menu-button
-          >
-            <svg width="40px" height="40px" aria-label="кнопка меню">
-              <use
-                class="icon-close"
-                href="./images/sprite.svg#icon-close_40px"
-              ></use>
+          <!-- кнопка відкриття мобільного вікна -->
+          <button class="menu__open" data-menu-open>
+            <svg width="40px" height="40px">
               <use
                 class="icon-menu"
                 href="./images/sprite.svg#icon-menu_40px"
               ></use>
             </svg>
           </button>
-
-          <!--  -->
-          <div class="menu__conteiner" id="menu-conteiner" data-menu>
-            <div>
-              <ul class="menu__list">
-                <li class="menu__title">
-                  <a class="menu__link menu__focus current" href="">Студія</a>
-                </li>
-                <li class="menu__title">
-                  <a class="menu__link menu__focus" href="">Портфоліо</a>
-                </li>
-                <li class="menu__title">
-                  <a class="menu__link menu__focus" href="">Контакти</a>
-                </li>
-              </ul>
-            </div>
-            <div class="menu__conteiner-contakt">
-              <ul>
-                <li class="">
-                  <a class="menu__tel menu__focus" href="">+38 096 111 11 11</a>
-                </li>
-                <li class="menu__contakt">
-                  <a class="menu__mail menu__focus" href=""
-                    >info@devstudio.com</a
-                  >
-                </li>
-              </ul>
-
-              <ul class="menu__conteiner-social">
-                <li class="menu-social">Instagram</li>
-                <li class="menu-social">Twitter</li>
-                <li class="menu-social">Facebook</li>
-                <li class="menu-social">LinkedIn</li>
-              </ul>
-            </div>
-          </div>
 
           <!-- навігація -->
           <ul class="header__nav">
@@ -107,7 +59,7 @@
         <ul class="header__kontact-nav">
           <li class="">
             <a
-              class="header__link header__kontact"
+              class="header__lin header__kontact"
               href="mailto:info@devstudio.com"
             >
               <svg class="header__icon" width="10">
@@ -117,7 +69,7 @@
             >
           </li>
           <li class="header__item">
-            <a class="header__link header__kontact" href="tel:+380961111111">
+            <a class="header__lin header__kontact" href="tel:+380961111111">
               <svg class="header__icon" width="10">
                 <use href="./images/sprite.svg#icon-Vector"></use>
               </svg>
@@ -125,6 +77,51 @@
             >
           </li>
         </ul>
+      </div>
+
+      <!-- мобільне меню -->
+      <!--btn menu  -->
+      <div class="menu__mob is-hidden" data-menu>
+        <div>
+          <button class="menu__close" data-menu-close>
+            <svg width="40px" height="40px">
+              <use
+                class="icon-close"
+                href="./images/sprite.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <!--mob menu  -->
+          <ul class="menu__list">
+            <li class="menu__title">
+              <a class="menu__link menu__focus current" href="">Студія</a>
+            </li>
+            <li class="menu__title">
+              <a class="menu__link menu__focus" href="">Портфоліо</a>
+            </li>
+            <li class="menu__title">
+              <a class="menu__link menu__focus" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__conteiner-contakt">
+          <ul>
+            <li class="">
+              <a class="menu__tel menu__focus" href="">+38 096 111 11 11</a>
+            </li>
+            <li class="menu__contakt">
+              <a class="menu__mail menu__focus" href="">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="menu__conteiner-social">
+            <li class="menu-social">Instagram</li>
+            <li class="menu-social">Twitter</li>
+            <li class="menu-social">Facebook</li>
+            <li class="menu-social">LinkedIn</li>
+          </ul>
+        </div>
       </div>
     </header>
 
