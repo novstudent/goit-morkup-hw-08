@@ -1,5 +1,16 @@
 // постійні клієнти__секція 6
 
+@media screen and (min-width: 300px) {
+  .client-link {
+    display: block;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  // .section-headline {
+  //   margin-bottom: 20px;
+  // }
+}
+
 .client {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -41,7 +52,7 @@
   border: 1px solid #afb1b8;
 
   border-radius: 4px;
-  width: 170px;
+  // width: 170px;
   height: 92px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 

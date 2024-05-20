@@ -2,6 +2,45 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+@media screen and (min-width: 300px) and (max-width: 479px) {
+  .btn-projects {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    margin-bottom: 20px;
+  }
+  .box-btn {
+    // align-items: center;
+    justify-content: center;
+  }
+
+  .box-btn:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .projects {
+    width: 300px;
+    display: block;
+  }
+  .project {
+    width: 300px;
+  }
+  .overlu {
+    width: 300px;
+  }
+  .item {
+    width: 300px;
+  }
+  .proect {
+    width: 300px;
+  }
+
+  .project-img {
+    display: block;
+    width: 300px;
+    // height: 294px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .btn-projects {
     display: flex;
@@ -19,10 +58,6 @@
     width: 450px;
     height: 294px;
   }
-  .proect,
-  .proectuk {
-    padding: 20px 24px 20px 24px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -34,9 +69,7 @@
     margin-bottom: 30px;
     list-style: none;
   }
-  .projects {
-    display: flex;
-  }
+
   .project-img {
     display: block;
     width: 354px;
@@ -44,13 +77,7 @@
   }
 
   .proect {
-    flex-grow: 1;
     width: 354px;
-    padding: 20px 24px 20px 24px;
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
   }
 }
 
@@ -58,7 +85,6 @@
   .proect,
   .proectuk {
     width: 370px;
-    padding: 20px 24px 20px 24px;
   }
   .item {
     width: 370px;
@@ -135,9 +161,11 @@
   gap: 30px;
 }
 
-.proect,
-.proectuk {
-  // padding: 20px 24px 20px 24px;
+.proect {
+  flex-grow: 1;
+  justify-content: space-between;
+
+  padding: 20px 24px 20px 24px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
   border-left: 1px solid #eee;
@@ -158,8 +186,10 @@
 }
 
 .project {
-  // display: inline-block;
-  // display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   text-decoration: none;
   outline: transparent;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -195,8 +225,8 @@
     line-height: 1.55556;
     letter-spacing: 0.03em;
     color: var(--white-col);
-    width: 322px;
-    height: 168px;
+    // width: 322px;
+    // height: 168px;
   }
 }
 

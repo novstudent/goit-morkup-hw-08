@@ -1,4 +1,11 @@
 .features__list {
+  @media screen and (min-width: 300px) and (max-width: 450px) {
+    .features__icon {
+      width: 300px;
+      height: 120px;
+    }
+  }
+
   @media screen and (min-width: 480px) {
     .features__icon {
       width: 450px;
