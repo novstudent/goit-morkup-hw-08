@@ -56,7 +56,7 @@ body {
   }
 }
 
-.header .container {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -156,6 +156,12 @@ ul {
 @media screen and (max-width: 450px) {
   .modal-wrapper {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .modal-wrapper {
+    max-width: 100%;
+    padding: 20px;
   }
 }
 
@@ -294,11 +300,17 @@ ul {
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: var(--gray-col);
-  margin-left: 9px;
+  margin-left: 0px;
+  display: block;
 }
 @media screen and (max-width: 1200px) {
   .polise-private {
     font-size: 12px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .polise-private {
+    margin-left: 15px;
   }
 }
 
@@ -313,7 +325,7 @@ ul {
 .custom-checkbox {
   width: 16px;
   height: 15px;
-  left: 0px;
+  margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +339,11 @@ ul {
   border: 1px solid var(--primary-color);
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 420px) {
+  .custom-checkbox {
+    margin-left: 0px;
+  }
 }
 
 .form-polisu-grup:hover .custom-checkbox {
@@ -553,9 +570,7 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .menu__conteiner-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     margin-top: 64px;
   }
   .menu-social {
@@ -931,14 +946,16 @@ ul {
   .hero .container {
     width: 100%;
     text-align: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob.png);
-    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob.png);
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob.jpg);
+    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob.jpg);
   }
 }
 @media screen and (min-width: 300px) and (min-device-pixel-ratio: 2), screen and (min-width: 300px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 300px) and (min-resolution: 192dpi), screen and (min-width: 300px) and (min-resolution: 2dppx) {
   .hero .container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob-img@2x.png);
-    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob-img@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob@2x.jpg);
+    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 300px) {
@@ -968,15 +985,15 @@ ul {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob.png);
-    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob.jpg);
+    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob.jpg);
     background-size: cover;
   }
 }
 @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero .container {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob-img@2x.png);
-    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob-img@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 6, 15, 0.4)), to(rgba(5, 6, 15, 0.4))), url(../images/hero-mob@2x.jpg);
+    background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)), url(../images/hero-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 480px) {
@@ -1411,7 +1428,7 @@ ul {
   }
   .form-footer-email {
     margin-bottom: 20px;
-    width: 300px;
+    width: 480px;
   }
   .form-fild {
     display: block;
@@ -1439,6 +1456,10 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin: auto;
+  }
+  .form-footer-email {
+    width: 450px;
+    margin-right: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1816,11 +1837,36 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 300px) {
+  .overlu-color {
+    padding: 40px 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .overlu-color {
+    padding: 74px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .overlu-color {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlu-color {
+    padding: 63px 24px;
+  }
+}
 .overlu-text {
   font-size: 18px;
   line-height: 1.55556;
   letter-spacing: 0.03em;
   color: var(--white-col);
+}
+@media screen and (max-width: 480px) {
+  .overlu-text {
+    font-size: 16px;
+  }
 }
 
 .project:hover .overlu-color,

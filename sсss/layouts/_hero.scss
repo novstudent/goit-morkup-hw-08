@@ -4,9 +4,11 @@
   .hero .container {
     width: 100%;
     text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)),
-      url(../images/hero-mob.png);
+      url(../images/hero-mob.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -15,7 +17,7 @@
           rgba(5, 6, 15, 0.4),
           rgba(5, 6, 15, 0.4)
         ),
-        url(../images/hero-mob-img@2x.png);
+        url(../images/hero-mob@2x.jpg);
     }
   }
   .hero__title {
@@ -50,7 +52,7 @@
     margin-right: auto;
 
     background-image: linear-gradient(rgba(5, 6, 15, 0.4), rgba(5, 6, 15, 0.4)),
-      url(../images/hero-mob.png);
+      url(../images/hero-mob.jpg);
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
@@ -60,7 +62,7 @@
           rgba(5, 6, 15, 0.4),
           rgba(5, 6, 15, 0.4)
         ),
-        url(../images/hero-mob-img@2x.png);
+        url(../images/hero-mob@2x.jpg);
     }
   }
 

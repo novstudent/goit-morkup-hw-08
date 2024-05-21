@@ -33,6 +33,10 @@
   @media screen and (max-width: 450px) {
     max-width: 100%;
   }
+  @media screen and (max-width: 320px) {
+    max-width: 100%;
+    padding: 20px;
+  }
   position: absolute;
   top: 50%;
   left: 50%;
@@ -161,11 +165,16 @@
   @media screen and (max-width: 1200px) {
     font-size: 12px;
   }
+  @media screen and (min-width: 420px) {
+    margin-left: 15px;
+  }
   font-size: 14px;
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: var(--gray-col);
-  margin-left: 9px;
+
+  margin-left: 0px;
+  display: block;
 }
 .polise-private-contract {
   text-decoration: underline;
@@ -174,9 +183,12 @@
 }
 /* --checkbox-- */
 .custom-checkbox {
+  @media screen and (min-width: 420px) {
+    margin-left: 0px;
+  }
   width: 16px;
   height: 15px;
-  left: 0px;
+  margin-left: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

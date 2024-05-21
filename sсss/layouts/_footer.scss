@@ -21,7 +21,7 @@
   }
   .form-footer-email {
     margin-bottom: 20px;
-    width: 300px;
+    width: 480px;
   }
   .form-fild {
     display: block;
@@ -46,6 +46,10 @@
   .footer-btn-form {
     display: flex;
     margin: auto;
+  }
+  .form-footer-email {
+    width: 450px;
+    margin-right: 0px;
   }
 }
 
