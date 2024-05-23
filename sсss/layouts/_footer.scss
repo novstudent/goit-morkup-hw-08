@@ -1,8 +1,7 @@
 .footer__main {
   background: #2f303a;
 }
-
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 300px) {
   .footer__container {
     display: block;
     text-align: center;
@@ -21,7 +20,37 @@
   }
   .form-footer-email {
     margin-bottom: 20px;
-    width: 480px;
+    width: 290px;
+  }
+  .form-fild {
+    display: block;
+  }
+  .footer-btn-form {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+  .footer__logo {
+    display: block;
+
+    margin-bottom: 20px;
+  }
+  .fut__mail {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .footer__address,
+  .footer-icon {
+    margin-bottom: 60px;
+  }
+  .form-footer-email {
+    margin-bottom: 20px;
+    width: 450px;
   }
   .form-fild {
     display: block;

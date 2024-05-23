@@ -35,12 +35,14 @@
   }
   @media screen and (max-width: 320px) {
     max-width: 100%;
-    padding: 20px;
+    padding: 50px 40px 20px 40px;
+    //   padding-top: 50px;
   }
   position: absolute;
   top: 50%;
   left: 50%;
   // width: 528px;
+
   height: 581px;
 
   transform: translate(-50%, -50%) scale(1);
