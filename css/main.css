@@ -1728,6 +1728,9 @@ ul {
     margin-bottom: 30px;
     list-style: none;
   }
+  .box-btn:not(:last-child) {
+    margin-right: 8px;
+  }
   .project-img {
     display: block;
     width: 354px;
